@@ -1,0 +1,2 @@
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://newsapi.org https://gnews.io https://api.allorigins.win;
