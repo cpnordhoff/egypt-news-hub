@@ -208,13 +208,13 @@ function setupLoadMore() {
 // API INTEGRATION SECTION
 // ============================================
 
-/*
-To fetch real news, uncomment and modify this section:
+
+// To fetch real news, uncomment and modify this section:
 
 async function fetchRealNews() {
     try {
         // Option 1: NewsAPI.org
-        const apiKey = 'YOUR_API_KEY_HERE';
+        const apiKey = 'fb92ba752d2544879e51112bfb4b6576';
         const query = 'Egypt AND (Gaza OR "Middle East" OR conflict OR ceasefire)';
         const sources = 'al-jazeera-english'; // Add more sources separated by commas
         
@@ -245,7 +245,8 @@ async function fetchRealNews() {
 function determineSourceType(sourceName) {
     const egyptianSources = ['Al-Ahram', 'Egypt Independent', 'Mada Masr', 'Al-Masry Al-Youm', 'Daily News Egypt'];
     const regionalSources = ['Al-Jazeera', 'Middle East Eye', 'Al-Monitor', 'Arab News', 'The National'];
-    
+    const internationalSources = ['BBC', 'CBS News', 'CNN', 'CNBC', 'NPR'];
+
     if (egyptianSources.some(s => sourceName.includes(s))) return 'egyptian';
     if (regionalSources.some(s => sourceName.includes(s))) return 'regional';
     return 'international';
@@ -269,4 +270,4 @@ function formatTime(dateString) {
 //     sampleArticles = articles;
 //     renderArticles();
 // });
-*/
+
